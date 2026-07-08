@@ -10,6 +10,13 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Palet Warna Custom Sacred Foundation */
+  --color-navy-800: #000888;
+  --color-navy-900: #000666;
+  --color-gold-400: #ffdf7a;
+  --color-gold-500: #fed65b;
+  --color-gold-600: #e5be4a;
 }
 
 @media (prefers-color-scheme: dark) {
