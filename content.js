@@ -63,6 +63,127 @@ export const pastorLetterContent = {
   signatureRole: "Pastor Kepala Unit Pastoral St. Yohanes Don Bosco Rumbia",
 };
 
+export const navContent = {
+  parishName: "Stasi Santo Petrus Bratasena",
+  parishShort: "St. Petrus Bratasena",
+  logo: "/images/logo.png",
+  links: [
+    { label: "Beranda", href: "#beranda" },
+    { label: "Surat Romo", href: "#surat-romo" },
+    { label: "Progres", href: "#progres" },
+    { label: "Galeri", href: "#galeri" },
+    { label: "Donasi", href: "#donasi" },
+  ],
+  cta: { label: "Donasi Sekarang", href: "#donasi" },
+};
+
+export const galleryContent = {
+  eyebrow: "Dokumentasi Terkini",
+  title: "Galeri Kondisi Gereja Saat Ini",
+  description:
+    "Bangunan telah berdiri sekitar 85% — berikut kondisi terkini yang masih menanti tahap penyelesaian akhir: plafon, pengecatan dinding, kursi umat, dan instalasi listrik.",
+  images: [
+    {
+      src: "/images/gallery/tampak-depan.jpg",
+      alt: "Bangunan gereja tampak depan yang belum dikerjakan pengecatan dinding luar dan pintu",
+      caption: "Tampak Depan",
+      note: "Belum dikerjakan pengecatan dinding luar & pintu",
+    },
+    {
+      src: "/images/gallery/tampak-samping-kanan.jpg",
+      alt: "Bangunan gereja tampak samping kanan yang belum dikerjakan pengecatan dinding dan pintu",
+      caption: "Tampak Samping Kanan",
+      note: "Belum dikerjakan pengecatan dinding & pintu",
+    },
+    {
+      src: "/images/gallery/tampak-samping-kiri.jpg",
+      alt: "Bangunan gereja tampak samping kiri yang belum dikerjakan pengecatan dinding",
+      caption: "Tampak Samping Kiri",
+      note: "Belum dikerjakan pengecatan dinding",
+    },
+    {
+      src: "/images/gallery/tampak-belakang.jpg",
+      alt: "Bangunan gereja tampak belakang yang belum dikerjakan pengecatan",
+      caption: "Tampak Belakang",
+      note: "Belum dikerjakan pengecatan",
+    },
+    {
+      src: "/images/gallery/interior-1.jpg",
+      alt: "Bagian dalam gereja yang belum dikerjakan plafon dan pengecatan dinding dalam",
+      caption: "Bagian Dalam Gereja",
+      note: "Menanti plafon & kursi umat",
+    },
+    {
+      src: "/images/gallery/interior-2.jpg",
+      alt: "Bagian dalam gereja dengan kursi umat sementara",
+      caption: "Bagian Dalam Gereja",
+      note: "Menanti plafon & pengecatan dinding dalam",
+    },
+    {
+      src: "/images/gallery/interior-3.jpg",
+      alt: "Bagian dalam gereja tampak altar",
+      caption: "Bagian Dalam Gereja",
+      note: "Menanti plafon & pengecatan dinding dalam",
+    },
+    {
+      src: "/images/gallery/interior-4.jpg",
+      alt: "Bagian dalam gereja tampak menara lonceng",
+      caption: "Bagian Dalam Gereja",
+      note: "Menanti plafon & pengecatan dinding dalam",
+    },
+    {
+      src: "/images/gallery/ruangan-1.jpg",
+      alt: "Ruangan yang belum dikerjakan plafon dan pengecatan dinding, pintu",
+      caption: "Ruangan Pendukung",
+      note: "Menanti plafon & pengecatan",
+    },
+    {
+      src: "/images/gallery/ruangan-2.jpg",
+      alt: "Ruangan yang belum dikerjakan plafon dan pengecatan dinding, pintu",
+      caption: "Ruangan Pendukung",
+      note: "Menanti plafon & pengecatan",
+    },
+    {
+      src: "/images/gallery/ruangan-3.jpg",
+      alt: "Ruangan yang belum dikerjakan plafon dan pengecatan dinding, pintu",
+      caption: "Ruangan Pendukung",
+      note: "Menanti plafon & pengecatan",
+    },
+    {
+      src: "/images/gallery/ruangan-4.jpg",
+      alt: "Ruangan yang belum dikerjakan plafon dan pengecatan dinding, pintu",
+      caption: "Ruangan Pendukung",
+      note: "Menanti plafon & pengecatan",
+    },
+    {
+      src: "/images/gallery/ruangan-5.jpg",
+      alt: "Ruangan yang belum dikerjakan plafon dan pengecatan dinding, pintu",
+      caption: "Ruangan Pendukung",
+      note: "Menanti plafon & pengecatan",
+    },
+    {
+      src: "/images/gallery/ruangan-6.jpg",
+      alt: "Ruangan yang belum dikerjakan plafon dan pengecatan dinding, pintu",
+      caption: "Ruangan Pendukung",
+      note: "Menanti plafon & pengecatan",
+    },
+  ],
+};
+
+export const footerContent = {
+  logo: "/images/logo.png",
+  parishName: "Gereja Katolik Stasi Santo Petrus Bratasena",
+  unitName: "Unit Pastoral St. Yohanes Don Bosco Rumbia",
+  diocese: "Keuskupan Sufragan Tanjung Karang",
+  address:
+    "Kawasan Central Housing Bratasena Adiwarna, Kec. Dente Teladas, Kab. Tulang Bawang, Lampung",
+  verse: {
+    text:
+      "Dengan segenap kemampuan aku telah mengadakan persediaan untuk rumah Allah-ku.",
+    source: "1 Tawarikh 29:2",
+  },
+};
+
 export const milestoneContent = {
   period: "Juli 2026",
   title: "Menuju Rumah Tuhan yang Paripurna",

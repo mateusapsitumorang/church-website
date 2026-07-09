@@ -5,7 +5,7 @@ export default function PastorLetter() {
     pastorLetterContent;
 
   return (
-    <section className="bg-[#eeeeee] px-6 py-24 md:py-[120px]">
+    <section id="surat-romo" className="bg-[#eeeeee] px-6 py-24 md:py-[120px] scroll-mt-[72px]">
       <div className="mx-auto max-w-[720px]">
         <p
           className="text-[14px] font-semibold uppercase tracking-[0.05em] text-[#735c00]"

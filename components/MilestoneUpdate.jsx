@@ -2,7 +2,11 @@ import { milestoneContent } from "../content";
 
 const statusStyles = {
   done: { dot: "bg-[#fed65b]", label: "Selesai", text: "text-[#735c00]" },
-  in_progress: { dot: "bg-[#000666]", label: "Berjalan", text: "text-[#000666]" },
+  in_progress: {
+    dot: "bg-[#000666]",
+    label: "Berjalan",
+    text: "text-[#000666]",
+  },
   pending: { dot: "bg-[#c6c5d4]", label: "Menunggu", text: "text-[#767683]" },
 };
 
@@ -10,7 +14,10 @@ export default function MilestoneUpdate() {
   const { period, title, summary, items, closingQuote } = milestoneContent;
 
   return (
-    <section className="bg-white px-6 py-24 md:py-[120px]">
+    <section
+      id="progres"
+      className="bg-white px-6 py-24 md:py-[120px] scroll-mt-[72px]"
+    >
       <div className="mx-auto max-w-[900px]">
         <p
           className="text-[14px] font-semibold uppercase tracking-[0.05em] text-[#735c00]"
@@ -33,15 +40,25 @@ export default function MilestoneUpdate() {
           {summary}
         </p>
 
-        {/* Milestone timeline - vertical gold line, navy dots */}
-        <ol className="relative mt-12 space-y-8 border-l-[1px] border-[#fed65b] pl-8">
+        {/* Milestone timeline - Diperbaiki logic garisnya */}
+        <ul className="relative mt-12 space-y-8">
           {items.map((item, i) => {
             const style = statusStyles[item.status];
+            const isLast = i === items.length - 1; // Mengecek apakah ini item terakhir
+
             return (
-              <li key={i} className="relative">
+              <li key={i} className="relative pl-8">
+                {/* Garis vertikal (hanya dirender jika BUKAN item terakhir) */}
+                {!isLast && (
+                  <span className="absolute left-[5.5px] top-[12px] z-0 h-[calc(100%+32px)] w-[1px] bg-[#fed65b]" />
+                )}
+
+                {/* Dot indikator */}
                 <span
-                  className={`absolute -left-[35px] top-[4px] h-[12px] w-[12px] rounded-full ${style.dot}`}
+                  className={`absolute left-0 top-[6px] z-10 h-[12px] w-[12px] rounded-full ${style.dot}`}
                 />
+
+                {/* Konten Teks */}
                 <p
                   className="text-[16px] text-[#1a1c1c]"
                   style={{ fontFamily: "Inter, sans-serif" }}
@@ -57,7 +74,7 @@ export default function MilestoneUpdate() {
               </li>
             );
           })}
-        </ol>
+        </ul>
 
         <blockquote className="mt-14 border-l-[2px] border-[#fed65b] pl-6">
           <p

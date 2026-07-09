@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { homeContent } from "../content";
 
 export default function Hero() {
@@ -9,8 +10,26 @@ export default function Hero() {
   );
 
   return (
-    <section className="bg-[#f9f9f9] px-6 py-24 md:py-[120px]">
-      <div className="mx-auto max-w-[1200px]">
+    <section
+      id="beranda"
+      className="relative overflow-hidden bg-[#f9f9f9] px-6 py-24 md:py-[140px] scroll-mt-[72px]"
+    >
+      {/* Background photo */}
+      <Image
+        src="/images/backgroundhero.png"
+        alt="Bangunan Gereja Katolik Stasi Santo Petrus Bratasena"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
+
+      {/* White overlay gradient for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/40" />
+      <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-transparent" />
+
+      {/* Content - Ditambahkan z-10 agar berada di atas gradient */}
+      <div className="relative z-10 mx-auto max-w-[1200px]">
         <p
           className="mb-6 text-[14px] font-semibold uppercase tracking-[0.05em] text-[#735c00]"
           style={{ fontFamily: "Inter, sans-serif" }}
@@ -89,7 +108,7 @@ export default function Hero() {
         {/* CTA */}
         <div className="mt-10">
           <a
-            href="/donasi"
+            href="#donasi"
             className="inline-block rounded-[4px] bg-[#000666] px-8 py-4 text-[16px] font-semibold text-white shadow-[0_8px_30px_-8px_rgba(26,35,126,0.25)] transition-shadow hover:shadow-[0_12px_36px_-6px_rgba(26,35,126,0.35)]"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
